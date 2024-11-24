@@ -47,25 +47,32 @@
         }
       }
     </style>
+     <style>
+          .navbar-toggler-icon {
+              background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+          }
+      </style>
 
     
     <!-- Custom styles for this template -->
     <link href="dashboard.css" rel="stylesheet">
   </head>
   <body>
+
+    <nav class="navbar navbar-primary sticky-top bg-primary flex-md-nowrap p-0 shadow ">
+      <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3 text-white" href="dashboard.html" >BuenaComIA</a>
+      <button class="navbar-toggler  position-absolute d-md-none collapsed"  type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+   
+      <input class="form-control form-control-ligth w-100" type="text" placeholder="Buscar" aria-label="Search">
     
-<nav class="navbar navbar-primary sticky-top bg-primary flex-md-nowrap p-0 shadow">
-  <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="dashboard.html" style="color:aliceblue">BuenaComIA</a>
-  <button class="navbar-toggler position-absolute d-md-none collapsed" style="color:aliceblue;border-color: aliceblue;" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"><></span>
-  </button>
-  <input class="form-control form-control-ligth w-100" type="text" placeholder="Buscar" aria-label="Search">
-  
-  
-</nav>
+    </nav>
 
 <div class="container-fluid">
   <div class="row">
+    
+    
     <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
       <div class="sidebar-sticky pt-3">
         <ul class="nav flex-column">
@@ -99,22 +106,28 @@
               Inventario
             </a>
           </li>
+
+          <!--
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span data-feather="users"></span>
               Clientes
             </a>
           </li>
+          -->
+
+          <!-- añadir alertas
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span data-feather="bar-chart-2"></span>
               Alertas
             </a>
           </li>
+        -->
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="optimizacion.html">
               <span data-feather="layers"></span>
-              Integrations
+              Optimización
             </a>
           </li>
         </ul>
